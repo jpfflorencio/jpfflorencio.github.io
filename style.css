@@ -1,0 +1,105 @@
+body {
+    text-align: center;
+    position: relative;
+    margin: 0px;
+    color: #00ff5500;
+    background: #03030f;
+    background-image: url(img/fundo.png);
+    background-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.mcred {
+    text-align: center;
+    margin-top: 140px;
+    color: #fff;
+}
+
+.post{
+  transition: transform 0.7s;
+}
+
+.post:hover{
+  text-align: center;
+  color: #39ff07a2;
+  transform: scale(1.3);
+}
+
+.botao {
+  z-index: 0;
+  position: fixed;
+  border: none;
+  top: 20px;
+  right: 40px;
+  padding: 4.5px 7.5px;
+  font-size: 23px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 4.5px;
+  box-shadow: 0 2px #00ff55;
+}
+
+.botao {
+  background-color: #070022;
+}
+
+.botao:active {
+  background-color: #1e004e;
+  box-shadow: 0 2px #04ff4360;
+  transform: translateY(1px);
+}
+
+div {
+  margin-top: 40px;
+  text-align: center;
+  display: inline-block;
+  padding: 28px;
+  
+}
+
+.git:hover{
+color: #fffb00;
+
+}
+
+.id:hover{
+  color: #006eff;
+}
+
+.proj:hover{
+  color: #ff9100;
+}
+
+.app:hover{
+  color: #3cff00;
+}
+
+.titu1 {
+  box-shadow: 0 -150px 100px #3cff0023;
+}
+.titu2 {
+  box-shadow: 0 -150px 100px #ff910025;
+}
+.titu3 {
+  box-shadow: 0 -150px 100px #fffb0028;
+}
+.titu4 {
+  box-shadow: 0 -150px 100px #006eff28;
+}
+
+.titu4:hover, .titu3:hover, .titu2:hover, .titu1:hover {
+  box-shadow: 0 -150px 100px #006eff00;
+}
+
+
+
+
+
+
+
+
