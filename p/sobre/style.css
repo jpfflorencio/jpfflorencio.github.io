@@ -1,12 +1,93 @@
+html{
+  background-image: url(../../img/bkg.jpg);
+  background-size: auto;
+}
+
 body {
+  
     text-align: center;
     position: relative;
     margin: 0px;
-    color: #00ff5500;
-    background: #03030f;
-    background-image: url(img/wlp.png);
-    background-size: 1000px auto;
-    font-family: 'Courier New', Courier, monospace;  
+    color: #000000;
+    background: #ffffff00;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+.mnome {
+  white-space: nowrap;
+  position: absolute;
+  left: 140px;
+  margin-top: 50px;
+  transform: translate(0%, 0%);
+}
+
+.d1,.d2,.d3,.d4{
+  white-space: nowrap;
+  position: absolute;
+  transform: translate(0%, 0%);
+  color: #000000;
+  left: 140px;
+}
+.d1{
+  margin-top: 70px;
+}
+.d2{
+  margin-top: 85px;
+}
+.d3{
+  margin-top: 100px;
+}
+
+.d4{
+  margin-top: 115px;
+}
+
+.ft3x4{
+  position: absolute;
+  left: 50px;
+  margin-top: 50px;
+  transition: transform 0.7s;
+}
+
+.ft3x4:hover{
+  position: absolute;
+  left: 45px;
+  margin-top: 50px;
+  filter: grayscale(55%);
+  transform: scale(1.2);
+}
+
+.main{
+  text-align: center;
+  margin-top: 150px;
+
+}
+
+.post2{
+  position: relative;
+  text-align: center;
+  display: list-item;
+  display: block;
+  position: relative;
+}
+
+.tx1{
+  text-align: left;
+  color: #000000;
+  margin-top: 0px;
+}
+
+.tx2{
+  text-align: left;
+  color: #000000;
+  margin-top: 0px;
+}
+
+.tx3, .tx4{
+  text-align: left;
+  color: #000000;
+  margin-top: -15px;
 }
 
 .rt{
@@ -49,9 +130,9 @@ body {
 
 
 div {
-  margin-top: 40px;
+  margin-top: 60px;
   text-align: center;
-  display: inline-block;
+  block-size: 10%;
   padding: 28px;
 }
 

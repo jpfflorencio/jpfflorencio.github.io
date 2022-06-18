@@ -4,7 +4,7 @@ body {
     margin: 0px;
     color: #00ff5500;
     background: #03030f;
-    background-image: url(img/wlp.png);
+    background-image: url(../../img/wlp.png);
     background-size: 1000px auto;
     font-family: 'Courier New', Courier, monospace;  
 }
@@ -55,18 +55,8 @@ div {
   padding: 28px;
 }
 
-
-.git:hover{
-color: #fffb00;
-
-}
-
-.id:hover{
-  color: #006eff;
-}
-
 .proj:hover{
-  color: #ff9100;
+  color: #3cff00;
 }
 
 .app:hover{
@@ -77,13 +67,7 @@ color: #fffb00;
   box-shadow: 0 -150px 100px #3cff0023;
 }
 .titu2 {
-  box-shadow: 0 -150px 100px #ff910025;
-}
-.titu3 {
-  box-shadow: 0 -150px 100px #fffb0028;
-}
-.titu4 {
-  box-shadow: 0 -150px 100px #006eff28;
+  box-shadow: 0 -150px 100px #3cff0023;
 }
 
 .titu4:hover, .titu3:hover, .titu2:hover, .titu1:hover {

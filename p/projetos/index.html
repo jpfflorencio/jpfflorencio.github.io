@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>joao</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+      </script>
+
+<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+  jQuery(window).load(function($){
+    atualizaRelogio();
+  });
+</script>
+
+<script>
+  function atualizaRelogio(){ 
+    var momentoAtual = new Date();
+    
+    var vhora = momentoAtual.getHours();
+    var vminuto = momentoAtual.getMinutes();
+    var vsegundo = momentoAtual.getSeconds();
+    
+    var vdia = momentoAtual.getDate();
+    var vmes = momentoAtual.getMonth() + 1;
+    var vano = momentoAtual.getFullYear();
+    
+    if (vdia < 10){ vdia = "0" + vdia;}
+    if (vmes < 10){ vmes = "0" + vmes;}
+    if (vhora < 10){ vhora = "0" + vhora;}
+    if (vminuto < 10){ vminuto = "0" + vminuto;}
+    if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+
+    dataFormat = vdia + "/" + vmes + "/" + vano;
+    horaFormat = vhora + ":" + vminuto;
+
+    document.getElementById("data").innerHTML = dataFormat;
+    document.getElementById("hora").innerHTML = horaFormat;
+
+    setTimeout("atualizaRelogio()",1000);
+  }
+</script>
+
+</head>
+<body>
+    <H3>Virtual System :)</H3>
+
+
+<div class="dataehora">
+		<div>
+			<output class="data" id="data"></output>
+		</div>
+		<div>
+			<output class="hora" id="hora"></output>				
+		</div>
+  </div> 
+
+<div>
+  <a href="../../index.html"><div class="desligar"><img src="../../img/desligar.png" weight="60" height="60"/>
+  <p>Desligar</p></div></a>
+
+  <a target="_blank" href="https://github.com/jpfflorencio"><div class="github"><img src="../../img/githubicon.png" weight="60" height="60"/>
+    <p>Github</p></div></a>
+</div>
+
+
+  <div class="imginiciar"><img class="imgsbp" src="../../img/menu.png"  weight="43" height="43"/></div>
+
+<div class="main">
+  <div class="barrinha"></div>
+
+  <div class="barrainiciar">
+    <div class="menu1">
+      <i class="fa fa-caret-down"><button class="dropbtn" onclick="myFunction()" ><img class="menu" src=""/></button></i>
+  <img src="../../img/barra.png" class="barra" alt="">
+   <div class="mlist" id="myDropdown">
+    <a href="#">Documentos</a>
+    <a href="#">Navegador</a>
+    <a href="#">Jogos</a>
+    <a href="#">Cofigurações</a>
+    <a href="#">Sistema</a>
+    <a href="#">Bloco de Notas</a>
+    <a href="#">Lixeira</a>
+  </div>
+  </div> 
+
+
+
+ 
+
+</div>
+ 
+</body>
+
+</html>
