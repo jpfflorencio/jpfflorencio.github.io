@@ -1,100 +1,42 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>joao</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+<html lang="pt-br">
+  <head>
+    <title>Base</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(e) {
-        if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementById("myDropdown");
-          if (myDropdown.classList.contains('show')) {
-            myDropdown.classList.remove('show');
-          }
-        }
-      }
-      </script>
+    <script src="js.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+  </head>
 
-<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
-<script type="text/javascript">
-  jQuery(window).load(function($){
-    atualizaRelogio();
-  });
-</script>
+  <body>      
+    <div> <div class="barrinha"></div>
 
-<script>
-  function atualizaRelogio(){ 
-    var momentoAtual = new Date();
-    
-    var vhora = momentoAtual.getHours();
-    var vminuto = momentoAtual.getMinutes();
-    var vsegundo = momentoAtual.getSeconds();
-    
-    var vdia = momentoAtual.getDate();
-    var vmes = momentoAtual.getMonth() + 1;
-    var vano = momentoAtual.getFullYear();
-    
-    if (vdia < 10){ vdia = "0" + vdia;}
-    if (vmes < 10){ vmes = "0" + vmes;}
-    if (vhora < 10){ vhora = "0" + vhora;}
-    if (vminuto < 10){ vminuto = "0" + vminuto;}
-    if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+    <div class="dataehora">
+      <div>
+        <output class="data" id="data"></output>
+      </div>
+      <div>
+        <output class="hora" id="hora"></output>				
+      </div>
+    </div> 
 
-    dataFormat = vdia + "/" + vmes + "/" + vano;
-    horaFormat = vhora + ":" + vminuto;
+    <div class="imginiciar"><img class="imgsbp" src="../../img/menu.png"  weight="43" height="43"/></div>
 
-    document.getElementById("data").innerHTML = dataFormat;
-    document.getElementById("hora").innerHTML = horaFormat;
-
-    setTimeout("atualizaRelogio()",1000);
-  }
-</script>
-
-</head>
-<body>
-    <H3>Virtual System :)</H3>
+    <div class="imgpdf"><img class="imgsbp" src="../../img/pdf.png"  weight="43" height="43"/></div>
+    <div class="imgdoc"><img class="imgsbp" src="../../img/document.png"  weight="43" height="43"/></div>
+    <div class="imgchr"><img class="imgsbp" src="../../img/navegador.png"  weight="43" height="43"/></div>
+    <div class="imggit"><img class="imgsbp" src="../../img/githubicon.png"  weight="43" height="43"/></div>
+    <div class="imggal"><img class="imgsbp" src="../../img/galeria.png"  weight="43" height="43"/></div>
+    <div class="imgdesl"><img class="imgsbp" src="../../img/desligar.png"  weight="43" height="43"/></div>
 
 
-<div class="dataehora">
-		<div>
-			<output class="data" id="data"></output>
-		</div>
-		<div>
-			<output class="hora" id="hora"></output>				
-		</div>
-  </div> 
-
-<div>
-  <a href="../../index.html"><div class="desligar"><img src="../../img/desligar.png" weight="60" height="60"/>
-  <p>Desligar</p></div></a>
-
-  <a target="_blank" href="https://github.com/jpfflorencio"><div class="github"><img src="../../img/githubicon.png" weight="60" height="60"/>
-    <p>Github</p></div></a>
-</div>
 
 
-  <div class="imginiciar"><img class="imgsbp" src="../../img/menu.png"  weight="43" height="43"/></div>
-
-<div class="main">
-  <div class="barrinha"></div>
-
-  <div class="barrainiciar">
-    <div class="menu1">
-      <i class="fa fa-caret-down"><button class="dropbtn" onclick="myFunction()" ><img class="menu" src=""/></button></i>
-  <img src="../../img/barra.png" class="barra" alt="">
-   <div class="mlist" id="myDropdown">
+  <div class="prog0">
+  <i><button class="bt0" onclick="programa0()"></button></i>
+  <div class="fechar0"></div>
+  <div class="list0" id="ml0">
+  <div class="frame0">
     <a href="#">Documentos</a>
     <a href="#">Navegador</a>
     <a href="#">Jogos</a>
@@ -103,14 +45,75 @@
     <a href="#">Bloco de Notas</a>
     <a href="#">Lixeira</a>
   </div>
-  </div> 
+  </div>
+  </div>
 
 
 
- 
 
-</div>
- 
-</body>
 
+      <div class="prog1">
+      <i><button class="bt1" onclick="programa1()"></button></i>
+      <div class="fechar1"></div>
+      <div class="list1" id="ml1">
+      <div class="frame1"><iframe 
+      src="programa/prog1.html"> 
+      </iframe></div>
+      </div>
+      </div>
+
+      <div class="prog2">
+        <i><button class="bt2" onclick="programa2()"></button></i>
+        <div class="fechar2"></div>
+        <div class="list2" id="ml2">
+        <div class="frame2"><iframe 
+        src="programa/prog2.html"> 
+        </iframe></div>
+        </div>
+        </div>
+
+        <div class="prog3">
+          <i><button class="bt3" onclick="programa3()"></button></i>
+          <div class="fechar3"></div>
+          <div class="list3" id="ml3">
+          <div class="frame3"><iframe 
+          src="https://www.google.com"> 
+          </iframe></div>
+          </div>
+          </div>
+
+          <div class="prog4">
+            <i><button class="bt4" onclick="programa4()"></button></i>
+            <div class="fechar4"></div>
+            <div class="list4" id="ml4">
+            <div class="frame4"><iframe 
+            src="programa/prog4.html"> 
+            </iframe></div>
+            </div>
+            </div>
+
+            <div class="prog5">
+              <i><button class="bt5" onclick="programa5()"></button></i>
+              <div class="fechar5"></div>
+              <div class="list5" id="ml5">
+              <div class="frame5"><iframe 
+              src="programa/prog5.html"> 
+              </iframe></div>
+              </div>
+              </div>
+
+              <div class="prog6">
+                <i><button class="bt6" onclick="programa6()"></button></i>
+                <div class="fechar6"></div>
+                <div class="list6" id="ml6">
+                <div class="frame6"><iframe 
+                src="programa/prog6.html"> 
+                </iframe></div>
+                </div>
+                </div>
+
+              
+              </div>
+               
+  </body>
 </html>
