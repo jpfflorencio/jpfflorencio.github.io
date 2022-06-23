@@ -2,16 +2,56 @@ body {
     text-align: center;
     position: relative;
     margin: 0px;
-    color: #ffffff;
+    color: #000000;
     background: #bdbdbd;
     font-family: 'Courier New', Courier, monospace; 
 }
 
-.barrasup{
+.barrasup1{
   position: fixed;
   width: 100%;
   height: 30px;
-  background-color: #0b0b74;
+  background-color: #e44040;
+  top: 0px;
+}
+
+.barrasup2{
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  background-color: #e7eb0e;
+  top: 0px;
+}
+
+.barrasup3{
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  background-color: #0a46ec;
+  top: 0px;
+}
+
+.barrasup4{
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  background-color: #097c99;
+  top: 0px;
+}
+
+.barrasup5{
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  background-color: #40c70b;
+  top: 0px;
+}
+
+.barrasup6{
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  background-color: #212f33;
   top: 0px;
 }
 
@@ -19,20 +59,39 @@ body {
   position: fixed;
   width: 45px;
   height: 30px;
-  background-color: #060061;
-  color: #ffffff;
+  background-color: #ffffff2a;
+  color: #000000;
   border: none;
   top: 0px;
-  right: 50px;
+  right: 45px;
 }
 
 .bt1{
   position: fixed;
   width: 45px;
   height: 30px;
-  background-color: #d10707;
+  background-color: #ffffff33;
   color: #ffffff;
   border: none;
   top: 0px;
   right: 0px;
+}
+.postbase{
+  position: relative;
+  top: 26px;
+  left: 15px;
+  text-align: left;
+}
+
+.postbase3{
+  text-align: center;
+}
+
+.postbase2{
+  background-color: #ffffff;
+}
+
+.curriculo1{
+  margin: 0px;
+  left: 0px;
 }

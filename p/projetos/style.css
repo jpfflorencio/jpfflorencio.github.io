@@ -34,6 +34,7 @@ body {
 
 .bt0, .bt0:focus {
   left: 3px;
+  text-align: center;
 }
 
 .bt1, .bt1:focus,.imgpdf {
@@ -58,6 +59,39 @@ body {
 
 .bt6, .bt6:focus,.imgdesl {
   left: 310px;
+  text-align: center;
+}
+
+
+
+.bt1:hover {
+  left: 57px;
+  background-color: #00317a73;
+}
+
+.bt2:hover {
+  left: 107px;
+  background-color: #00317a73;
+}
+
+.bt3:hover {
+  left: 157px;
+  background-color: #00317a73;
+}
+
+.bt4:hover {
+  left: 207px;
+  background-color: #00317a73;
+}
+
+.bt5:hover {
+  left: 257px;
+  background-color: #00317a73;
+}
+
+.bt6:hover {
+  left: 307px;
+  background-color: #00317a73;
 }
 
 .list0 a {
@@ -175,4 +209,18 @@ iframe{
 .imgpdf,.imgdoc,.imgchr,.imggit,.imggal,.imgdesl{
   position: fixed;
   bottom: 0px;
+}
+
+.dataehora{
+  color: #ffffff;
+  text-align: center;
+  position: fixed;
+  float: right ;
+  bottom: 7px;
+  right: 16px;
+}
+
+.cortxt{
+  color: #ffffff;
+  background-color: #b30606;
 }

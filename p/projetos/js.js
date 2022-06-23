@@ -84,7 +84,7 @@ function programa1() {
     }
   }
 
-  type="text/javascript"
+  
   jQuery(window).load(function($){
     atualizaRelogio();
   });
